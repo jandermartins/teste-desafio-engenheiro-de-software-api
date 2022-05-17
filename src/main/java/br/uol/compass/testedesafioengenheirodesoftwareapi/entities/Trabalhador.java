@@ -1,6 +1,7 @@
 package br.uol.compass.testedesafioengenheirodesoftwareapi.entities;
 
 import lombok.*;
+import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -17,8 +18,8 @@ public class Trabalhador implements Serializable {
 
     @Id
     @Column(name = "id", nullable = false)
-    @SequenceGenerator(name = "PROFISSIONAL_SEQ", sequenceName = "PROFISSIONAL_SEQ", allocationSize = 1)
-    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "PROFISSIONAL_SEQ")
+    @GeneratedValue(generator = "increment")
+    @GenericGenerator(name = "increment", strategy = "increment")
     private Long id;
 
     @Column(name = "NOME")
