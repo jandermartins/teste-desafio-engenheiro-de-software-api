@@ -1,9 +1,8 @@
-package br.uol.compass.testedesafioengenheirodesoftwareapi.controllers;
+package br.uol.comass.teste.controllers;
 
-import br.uol.compass.testedesafioengenheirodesoftwareapi.constants.Paths;
-import br.uol.compass.testedesafioengenheirodesoftwareapi.dto.ChamadoComTrabalhadorAtribuidoDTO;
-import br.uol.compass.testedesafioengenheirodesoftwareapi.dto.ChamadoResponseDTO;
-import br.uol.compass.testedesafioengenheirodesoftwareapi.services.ChamadoService;
+import br.uol.comass.teste.constants.Paths;
+import br.uol.comass.teste.dto.ChamadoComTrabalhadorAtribuidoDTO;
+import br.uol.comass.teste.services.ChamadoService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

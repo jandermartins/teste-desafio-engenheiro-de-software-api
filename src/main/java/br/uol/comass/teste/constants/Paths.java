@@ -1,4 +1,4 @@
-package br.uol.compass.testedesafioengenheirodesoftwareapi.constants;
+package br.uol.comass.teste.constants;
 
 import lombok.AccessLevel;
 import lombok.NoArgsConstructor;

@@ -1,20 +1,21 @@
-package br.uol.compass.testedesafioengenheirodesoftwareapi.entities;
+package br.uol.comass.teste.entities;
 
 import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
+import java.time.LocalDate;
 
+@Entity
+@Table(name = "CHAMADO")
+@Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-@Table(name = "PROFISSIONAL")
-@Entity
-public class Trabalhador implements Serializable {
+public class Chamado implements Serializable {
 
     @Id
     @Column(name = "id", nullable = false)
@@ -22,10 +23,13 @@ public class Trabalhador implements Serializable {
     @GenericGenerator(name = "increment", strategy = "increment")
     private Long id;
 
-    @Column(name = "NOME")
-    private String nome;
+    @Column(name = "idCliente")
+    private String idCliente;
 
-    @OneToMany(orphanRemoval = true, cascade = CascadeType.ALL)
-    private List<Chamado> chamados;
+    @Column(name = "dataDeAbertura")
+    private LocalDate dataDeAbertura;
+
+    @Column(name = "status")
+    private String status;
 
 }

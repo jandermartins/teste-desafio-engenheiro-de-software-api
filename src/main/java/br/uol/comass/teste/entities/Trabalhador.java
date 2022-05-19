@@ -1,39 +1,31 @@
-package br.uol.compass.testedesafioengenheirodesoftwareapi.entities;
+package br.uol.comass.teste.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.List;
 
-@Entity
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-@Table(name = "CLIENTE")
-public class Cliente {
+@Table(name = "PROFISSIONAL")
+@Entity
+public class Trabalhador implements Serializable {
+
     @Id
     @Column(name = "id", nullable = false)
     @GeneratedValue(generator = "increment")
     @GenericGenerator(name = "increment", strategy = "increment")
     private Long id;
 
-    @Column(name = "NOME", nullable = false, unique = true)
+    @Column(name = "NOME")
     private String nome;
 
     @OneToMany(orphanRemoval = true, cascade = CascadeType.ALL)
     private List<Chamado> chamados;
 
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 }

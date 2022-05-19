@@ -1,10 +1,10 @@
-package br.uol.compass.testedesafioengenheirodesoftwareapi;
+package br.uol.comass.teste;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class TesteDesafioApplicationTests {
+class TesteApplicationTests {
 
 	@Test
 	void contextLoads() {

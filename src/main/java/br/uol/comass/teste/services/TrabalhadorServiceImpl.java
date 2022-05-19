@@ -1,7 +1,7 @@
-package br.uol.compass.testedesafioengenheirodesoftwareapi.services;
+package br.uol.comass.teste.services;
 
-import br.uol.compass.testedesafioengenheirodesoftwareapi.dto.TrabalhadorResponseDTO;
-import br.uol.compass.testedesafioengenheirodesoftwareapi.repository.TrabalhadorRepository;
+import br.uol.comass.teste.dto.TrabalhadorResponseDTO;
+import br.uol.comass.teste.repository.TrabalhadorRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

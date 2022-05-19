@@ -1,13 +1,13 @@
-package br.uol.compass.testedesafioengenheirodesoftwareapi;
+package br.uol.comass.teste;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class TesteDesafioApplication {
+public class TesteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TesteDesafioApplication.class, args);
+		SpringApplication.run(TesteApplication.class, args);
 	}
 
 }

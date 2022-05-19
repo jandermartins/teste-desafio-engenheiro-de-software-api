@@ -1,9 +1,9 @@
-package br.uol.compass.testedesafioengenheirodesoftwareapi.services;
+package br.uol.comass.teste.services;
 
-import br.uol.compass.testedesafioengenheirodesoftwareapi.dto.ChamadoComTrabalhadorAtribuidoDTO;
-import br.uol.compass.testedesafioengenheirodesoftwareapi.dto.ChamadoResponseDTO;
-import br.uol.compass.testedesafioengenheirodesoftwareapi.dto.TrabalhadorResponseDTO;
-import br.uol.compass.testedesafioengenheirodesoftwareapi.repository.ChamadoRepository;
+import br.uol.comass.teste.dto.ChamadoComTrabalhadorAtribuidoDTO;
+import br.uol.comass.teste.dto.ChamadoResponseDTO;
+import br.uol.comass.teste.dto.TrabalhadorResponseDTO;
+import br.uol.comass.teste.repository.ChamadoRepository;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

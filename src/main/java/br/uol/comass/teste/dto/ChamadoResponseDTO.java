@@ -1,6 +1,7 @@
-package br.uol.compass.testedesafioengenheirodesoftwareapi.dto;
+package br.uol.comass.teste.dto;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.time.LocalDate;
