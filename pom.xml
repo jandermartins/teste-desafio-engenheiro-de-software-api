@@ -8,13 +8,13 @@
 		<version>2.6.7</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.uol.comass</groupId>
+	<groupId>br.compass.uol</groupId>
 	<artifactId>teste</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>teste</name>
-	<description>teste desafio engenheiro de software</description>
+	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
+
 	</properties>
 	<dependencies>
 		<dependency>
@@ -24,6 +24,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web-services</artifactId>
 		</dependency>
 
 		<dependency>
@@ -57,6 +61,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -65,7 +74,6 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<configuration>
-					<skip>true</skip>
 					<excludes>
 						<exclude>
 							<groupId>org.projectlombok</groupId>
@@ -73,11 +81,6 @@
 						</exclude>
 					</excludes>
 				</configuration>
-				<executions>
-					<execution>
-						<phase>none</phase>
-					</execution>
-				</executions>
 			</plugin>
 		</plugins>
 	</build>
